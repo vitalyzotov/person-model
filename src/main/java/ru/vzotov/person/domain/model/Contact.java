@@ -1,6 +1,6 @@
 package ru.vzotov.person.domain.model;
 
-import org.apache.commons.lang.Validate;
+import org.apache.commons.lang3.Validate;
 import ru.vzotov.ddd.shared.AggregateRoot;
 import ru.vzotov.ddd.shared.Entity;
 
@@ -132,7 +132,7 @@ public class Contact implements Entity<Contact>, Owned {
     }
 
     protected Contact() {
-        // for Hibernate
+        // for ORM
     }
 
     protected void onCreate() {

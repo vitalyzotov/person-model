@@ -1,6 +1,6 @@
 package ru.vzotov.person.domain.model;
 
-import org.apache.commons.lang.Validate;
+import org.apache.commons.lang3.Validate;
 import ru.vzotov.ddd.shared.AggregateRoot;
 import ru.vzotov.ddd.shared.Entity;
 
@@ -77,7 +77,7 @@ public class Person implements Entity<Person> {
     }
 
     protected Person() {
-        // for Hibernate
+        // for ORM
     }
 
     private Long id; // surrogate key
