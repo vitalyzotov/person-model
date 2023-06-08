@@ -58,6 +58,17 @@ public class Contact implements Entity<Contact>, Owned {
         this.data = new HashSet<>(data);
     }
 
+    public static Contact load(ContactId contactId, PersonId owner,
+                               String firstName, String middleName, String lastName, String displayName,
+                               Collection<ContactData> data,
+                               long version, OffsetDateTime created, OffsetDateTime updated) {
+        final Contact result = new Contact(contactId, owner, firstName, middleName, lastName, displayName, data);
+        result.version = version;
+        result.created = created;
+        result.updated = updated;
+        return result;
+    }
+
     public ContactId contactId() {
         return contactId;
     }
