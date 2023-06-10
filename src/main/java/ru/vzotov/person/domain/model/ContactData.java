@@ -1,6 +1,6 @@
 package ru.vzotov.person.domain.model;
 
-import org.apache.commons.lang.Validate;
+import org.apache.commons.lang3.Validate;
 import ru.vzotov.ddd.shared.ValueObject;
 
 import java.util.Objects;
@@ -55,7 +55,7 @@ public class ContactData implements ValueObject<ContactData> {
     }
 
     protected ContactData() {
-        // for Hibernate
+        // for ORM
     }
 
     private Long id;

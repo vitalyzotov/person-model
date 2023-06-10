@@ -1,6 +1,6 @@
 package ru.vzotov.person.domain.model;
 
-import org.apache.commons.lang.Validate;
+import org.apache.commons.lang3.Validate;
 import ru.vzotov.ddd.shared.ValueObject;
 
 import java.util.Objects;
@@ -62,7 +62,7 @@ public class PersonId implements ValueObject<PersonId> {
     }
 
     protected PersonId() {
-        // for Hibernate
+        // for ORM
     }
 
 }
